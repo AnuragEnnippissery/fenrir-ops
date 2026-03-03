@@ -15,31 +15,52 @@ function Dashboard(){
             <main>
                 <section className="px-5 flex flex-col gap-12">
                     <div className="flex justify-between flex-wrap gap-4">
-                        <p>Org : Project x</p>
-                        <p>Owner : Nammagiri</p>
-                        <p>Total Scans : 100</p>
-                        <p>Scheduled:1000</p>
-                        <p>Rescans:100</p>
-                        <p>Failed Scans:100</p>
-                        <p>10 min ago</p>
-                       
+                        <div>
+                            <span className="text-gray-600">Org :</span>
+                            <span className="font-bold">Project X</span>
+                        </div>
+                        <div>
+                             <span className="text-gray-600">Owner :</span>
+                             <span className="font-bold">Nammagiri</span> 
+                        </div>
+                        <div>
+                            <span className="text-gray-600">Total Scans :</span>
+                             <span className="font-bold">100</span> 
+                        </div>
+                        <div>
+                            <span className="text-gray-600">Scheduled:</span>
+                             <span className="font-bold">1000</span> 
+                        </div>
+                        <div>
+                            <span className="text-gray-600">Rescans :</span>
+                             <span className="font-bold">100</span> 
+                        </div>
+                        <div>
+                            <span className="text-gray-600">Failed Scans:</span>
+                             <span className="font-bold">100</span> 
+                        </div>
+                        <div>
+                             <span></span>
+                             <span className="text-gray-600">10 min ago</span> 
+                        </div>
+                        
                     </div>
                     <article className="flex justify-between">
                         <div>
-                             <p>Critical Severity</p>
-                             <p>86</p>
+                             <p className="text-gray-600">Critical Severity</p>
+                             <p className="font-bold">86</p>
                         </div>
                         <div>
-                            <p>High Severity</p>
-                            <p>16</p>
+                            <p className="text-gray-600">High Severity</p>
+                            <p className="font-bold">16</p>
                         </div>
                        <div>
-                            <p>Medium Severity</p>
-                            <p>26</p>
+                            <p className="text-gray-600">Medium Severity</p>
+                            <p className="font-bold">26</p>
                         </div>
                         <div>
-                            <p>Low Severity</p>
-                            <p>16</p>
+                            <p className="text-gray-600">Low Severity</p>
+                            <p className="font-bold">16</p>
                         </div>
                     </article>
                 </section>

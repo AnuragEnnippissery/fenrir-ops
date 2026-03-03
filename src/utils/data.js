@@ -95,6 +95,22 @@ export const scanlogs =[
   {
     "timestamp": "10:05:00",
     "message": "Identified potential access control weakness related to user identifiers in request headers. Documenting findings for responsible disclosure."
+  },
+  {
+    "timestamp": "10:06:00",
+    "message": "Observed inconsistent authorization checks across multiple API endpoints. Some routes rely solely on client-supplied identifiers without server-side validation."
+  },
+  {
+    "timestamp": "10:07:00",
+    "message": "Detected verbose error responses revealing internal stack traces. This may expose implementation details useful for further exploitation."
+  },
+  {
+    "timestamp": "10:08:00",
+    "message": "Identified missing input sanitization on search parameters. Malformed queries return abnormal database responses indicating improper filtering."
+  },
+  {
+    "timestamp": "10:09:00",
+    "message": "Session tokens remain valid after logout action. Improper session invalidation could allow unauthorized reuse of authenticated sessions."
   }
 ]
 
