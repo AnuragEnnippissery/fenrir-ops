@@ -5,7 +5,7 @@ import './input.css'
 import App from './App.jsx'
 import {RouterProvider,createBrowserRouter} from 'react-router-dom';
 import Login from './components/home/Login.jsx';
-import Dashboard from './components/dashboard/Dashboard.jsx';
+import Dashboard from './components/dashboard/Dashboard';
 import Layout from './components/dashboard/Layout.jsx'
 import Scan from './components/dashboard/Scan.jsx'
 
