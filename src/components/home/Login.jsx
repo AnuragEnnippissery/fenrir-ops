@@ -2,27 +2,35 @@ import { useState } from "react";
 import googleImg from "../../assets/google_img.png";
 import appleImg from "../../assets/apple_img.png";
 import metaImg from "../../assets/meta_img.png";
+import { useNavigate } from "react-router-dom";
 function Login(){
     let [fname,setFname]=useState();
     let [lname,setLname]=useState();
     let [password,setPassword]=useState();
     let[email,setEmail]=useState();
+    const navigate = useNavigate();
 
     
     return(
         <>
            {/* <main className="flex bg-teal-950 min-h-screen"> */}
-           <main className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-linear-to-br from-black via-gray-900 to-orange-500">
-                <section className="text-white  p-10 mx-3.5  flex flex-col justify-between align-center">
+           <main className="grid grid-cols-1 md:grid-cols-2  bg-linear-to-br from-black via-gray-900 to-orange-500 ">
+                <section className="text-white  p-10 mx-3.5  flex flex-col justify-center  item-center">
                     <div className="text-3xl font-bold text-white gap-8">Expert level CyberSecurity in
                          <span className="text-teal-900"> hours </span> not weeks</div>
-                    <div>
-                        <p>What's included</p>
-                        <p>Effortlessly spider and map targets to uncover hidden security flaws</p>
-                        <p>Deliver high-quality , validated findings in hours , not weeks.</p>
-                        <p>Generate professional , enterprise -grade security reports automatically.</p>
-                        <p>Trust pilot</p>
-                        <p>Rated 4.5/5 (100k+ reviews)</p>
+                    <div className="flex flex-col justify-between">  
+                        <div>
+                            <p>What's included</p>
+                            <p>Effortlessly spider and map targets to uncover hidden security flaws</p>
+                            <p>Deliver high-quality , validated findings in hours , not weeks.</p>
+                            <p>Generate professional , enterprise -grade security reports automatically.</p>
+                        </div>
+                        
+                        <div>
+                            <p>Trust pilot</p>
+                             <p>Rated 4.5/5 (100k+ reviews)</p>
+                        </div>
+                        
                     </div>
                     
                 </section>
@@ -66,7 +74,7 @@ function Login(){
                             className="border p-2 rounded"
                             />
                             <p>I agree to apps term and condition and acknowledge the privacy policy</p>
-                            <button type="submit"  className="bg-[#0CC8A8] text-white p-2 rounded-full">Create Account</button>
+                            <button type="submit"  className="bg-[#0CC8A8] text-white p-2 rounded-full"  onClick={() => navigate("/dashboard")}>Create Account</button>
                             <div className="flex justify-center gap-3">
                                 <button>
                                     <img src={appleImg} alt="Apple"  />

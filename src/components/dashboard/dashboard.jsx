@@ -64,27 +64,37 @@ function Dashboard(){
                         </div>
                     </article>
                 </section>
-                <section className="px-5 mt-10">
+                <section className="px-5 mt-10 ">
+                    <article className="flex justify-between py-5">
+                        <div >
+                            <input type="text" placeholder="Search Scans by name or type" className="w-full md:w-96 border p-2 rounded-md"/>
+                        </div>
+                        <div className="flex justify-around gap-2">
+                            <button className="px-4 py-1 border border-gray-600">Filter </button>
+                            <button className="px-4 py-1 border border-gray-600"> Column</button>
+                            <button className="px-4 py-1 border border-gray-600 text-white bg-teal-700" > + New Scan</button>
+                        </div>
+                    </article>
                     <table border="1" cellPadding="8">
                     <thead>
                         <tr>
-                        <th className="px-4 py-2 border">Scan Name</th>
-                        <th className="px-4 py-2 border">Type </th>
-                        <th className="px-4 py-2 border">Status</th>
-                        <th className="px-4 py-2 border">Progress</th>
-                        <th className="px-4 py-2 border">Vulnerability</th>
-                        <th className="px-4 py-2 border">Last Scan</th>
+                        <th className="px-14 py-2 border">Scan Name</th>
+                        <th className="px-18 py-2 border">Type </th>
+                        <th className="px-18 py-2 border">Status</th>
+                        <th className="px-18 py-2 border">Progress</th>
+                        <th className="px-18 py-2 border">Vulnerability</th>
+                        <th className="px-8 py-2 border">Last Scan</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         {scandata.map((scan) => (
                         <tr key={scan.id}>
-                            <td className="px-4 py-2 ">{scan.name}</td>
-                            <td className="px-4 py-2 ">{scan.type}</td>
-                            <td className="px-4 py-2 ">{scan.status}</td>
-                            <td className="px-4 py-2 ">{scan.progress}</td>
-                            <td className="px-4 py-2 ">
+                            <td className="px-4 py-2 text-center">{scan.name}</td>
+                            <td className="px-4 py-2 text-center">{scan.type}</td>
+                            <td className="px-4 py-2 text-center">{scan.status}</td>
+                            <td className="px-4 py-2 text-center">{scan.progress}</td>
+                            <td className="px-4 py-2 text-center">
                                 <div className="flex gap-2 flex-wrap">
                                     {Object.entries(scan.vulnerabilities).map(([level, count]) => {
                                     let colorClass = "";
@@ -97,7 +107,7 @@ function Dashboard(){
                                     return (
                                         <span
                                         key={level}
-                                        className={`px-2 py-1 text-xs rounded font-semibold ${colorClass}`}
+                                        className={`px-2 py-1 text-xs rounded font-semibold text-center ${colorClass}`}
                                         >
                                         {count}
                                         </span>
@@ -105,7 +115,7 @@ function Dashboard(){
                                     })}
                                 </div>
                             </td>
-                            <td className="px-4 py-2 ">{scan.lastScan}</td>
+                            <td className="px-4 py-2 text-center">{scan.lastScan}</td>
                         </tr>
                         ))}
                     </tbody>
