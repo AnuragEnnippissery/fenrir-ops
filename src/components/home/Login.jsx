@@ -12,7 +12,7 @@ function Login(){
     return(
         <>
            {/* <main className="flex bg-teal-950 min-h-screen"> */}
-           <main className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-gradient-to-br from-black via-gray-900 to-orange-500">
+           <main className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-linear-to-br from-black via-gray-900 to-orange-500">
                 <section className="text-white  p-10 mx-3.5  flex flex-col justify-between align-center">
                     <div className="text-3xl font-bold text-white gap-8">Expert level CyberSecurity in
                          <span className="text-teal-900"> hours </span> not weeks</div>

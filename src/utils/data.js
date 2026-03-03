@@ -39,7 +39,7 @@ export const scans = [
       medium: 0,
       low: 0
     },
-    lastScan: "Scheduled"
+    lastScan: "6d ago"
   },
   {
     id: 4,

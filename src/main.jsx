@@ -4,23 +4,40 @@ import './index.css'
 import './input.css'
 import App from './App.jsx'
 import {RouterProvider,createBrowserRouter} from 'react-router-dom';
-import Login from './components/home/login.jsx';
+import Login from './components/home/Login.jsx';
 import Dashboard from './components/dashboard/Dashboard.jsx';
+import Layout from './components/dashboard/Layout.jsx'
 
-const appRouter =createBrowserRouter([
+const appRouter = createBrowserRouter([
   {
-    path: '/',
-    element:<App/>,
-    children:[
+    path: "/",
+    element: <App />,
+    children: [
       {
-        index:true,
-        element:<Login/>
+        index: true,
+        element: <Login />
       },
-      {path:'/Login',element:<Login/>},
-      {path:'/Dashboard',element:<Dashboard/>},
+      {
+        path: "login",
+        element: <Login />
+      },
+      {
+        path: "dashboard",
+        element: <Layout />,
+        children: [
+          {
+            index: true,
+            element: <Dashboard />
+          },
+          // {
+          //   path: "scan",
+          //   element: <Scan />
+          // }
+        ]
+      }
     ]
   }
-])
+]);
 
 
 
