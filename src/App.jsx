@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>fenrir</h1>
+      
       <Outlet />
     </>
   )
