@@ -10,7 +10,8 @@ function Login(){
                     <p>Generate professional , enterprise -grade security reports automatically.</p>
                 </section>
                 <section>
-                    <p>form</p>
+                    <p className="text-3xl font-bold underline">form</p>
+                    <p className="text-red-600 ">Anu</p>
                 </section>
             </main>
         </>

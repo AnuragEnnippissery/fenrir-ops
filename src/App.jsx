@@ -1,5 +1,6 @@
-import Header from './components/home/header'
+
 import './App.css'
+import {Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <h1>fenrir</h1>
-      <Header />
+      <Outlet />
     </>
   )
 }
