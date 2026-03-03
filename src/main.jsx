@@ -7,6 +7,7 @@ import {RouterProvider,createBrowserRouter} from 'react-router-dom';
 import Login from './components/home/Login.jsx';
 import Dashboard from './components/dashboard/Dashboard.jsx';
 import Layout from './components/dashboard/Layout.jsx'
+import Scan from './components/dashboard/Scan.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -29,10 +30,10 @@ const appRouter = createBrowserRouter([
             index: true,
             element: <Dashboard />
           },
-          // {
-          //   path: "scan",
-          //   element: <Scan />
-          // }
+          {
+            path: "scan",
+            element: <Scan />
+          }
         ]
       }
     ]

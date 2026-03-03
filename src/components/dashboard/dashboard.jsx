@@ -20,7 +20,7 @@ function Dashboard(){
                         <p>Total Scans : 100</p>
                         <p>Scheduled:1000</p>
                         <p>Rescans:100</p>
-                        <p>Failed Scans</p>
+                        <p>Failed Scans:100</p>
                         <p>10 min ago</p>
                        
                     </div>
