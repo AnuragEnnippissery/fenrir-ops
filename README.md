@@ -1,16 +1,33 @@
-# React + Vite
+# Fenrir Aps Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsivr React +vite dashboard with Tailwind CSS v4 and Dark Mode support
 
-Currently, two official plugins are available:
+# Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 
+Tailwind CSS v4
+React Router
+Responsivr Sidebar Layout
+Dark / Light Mode Toggle
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+# Project Strucutre
+src / 
+components /
+home/
+login.jsx
+dashboard/
+Dashboard.jsx
+Header.jsx
+Layout.jsx
+Scan.jsx
+ThemeToggle.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Next Improvements
+Persist theme using localStorage
+Add smooth theme transition
+Improve table UI (modern SaaS style)
+Add collapsible sidebar for desktop
+
+Built as a practice SaaS - style dashboard project.

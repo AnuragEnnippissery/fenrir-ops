@@ -2,13 +2,19 @@ import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { GrFormSchedule } from "react-icons/gr";
 import { BiMemoryCard } from "react-icons/bi";
 import { Link} from "react-router-dom";
+import ThemeToggle from "./ThemeToggle.jsx";
 function Header(){
+    
     return(
         <>
             
             <main>
                 <section>
+
                     <nav>
+                         <div className="flex justify-end mb-4">
+                            <ThemeToggle />
+                            </div>
                         <ul>
                             
                            <li>

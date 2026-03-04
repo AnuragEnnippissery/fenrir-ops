@@ -13,24 +13,25 @@ function Dashboard() {
   }, []);
 
   return (
-    <main className="px-4 md:px-6 py-6 space-y-10">
+    // <main className="px-4 md:px-6 py-6 space-y-10">
+   <main className="px-4 md:px-6 py-6 space-y-10 bg-white dark:bg-black text-gray-900 dark:text-white">
 
       {/* TOP INFO SECTION */}
       <section className="flex flex-col gap-8">
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 ">
           <div>
-            <span className="text-gray-600">Org :</span>
+            <span className="text-gray-600 dark:text-gray-400">Org :</span>
             <span className="font-bold"> Project X</span>
           </div>
 
           <div>
-            <span className="text-gray-600">Owner :</span>
+            <span className="text-gray-600 dark:text-gray-400">Owner :</span>
             <span className="font-bold"> Nammagiri</span>
           </div>
 
           <div>
-            <span className="text-gray-600">Total Scans :</span>
+            <span className="text-gray-600 dark:text-gray-400">Total Scans :</span>
             <span className="font-bold"> 100</span>
           </div>
 

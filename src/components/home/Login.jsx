@@ -96,13 +96,13 @@ function Login() {
 
             <div className="flex justify-center gap-4 pt-4">
               <button>
-                <img src={appleImg} alt="Apple" className="w-8 h-8" />
+                <img src={appleImg} alt="Apple"  />
               </button>
               <button>
-                <img src={googleImg} alt="Google" className="w-8 h-8" />
+                <img src={googleImg} alt="Google"  />
               </button>
               <button>
-                <img src={metaImg} alt="Meta" className="w-8 h-8" />
+                <img src={metaImg} alt="Meta"  />
               </button>
             </div>
           </div>

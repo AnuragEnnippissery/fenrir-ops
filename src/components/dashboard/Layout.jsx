@@ -6,7 +6,8 @@ function Layout() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="<div className=flex min-h-screen overflow-hidden bg-gray-100">
+    // <div className=" flex min-h-screen overflow-hidden bg-gray-100 dark:bg-gray-900">
+    <div className="flex min-h-screen overflow-hidden bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
 
       {/* MOBILE MENU BUTTON */}
       <button
@@ -29,7 +30,7 @@ function Layout() {
       </div>
 
       {/* PAGE CONTENT */}
-      <div className="flex-1 p-6 bg-gray-100 overflow-x-auto">
+     <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-900 overflow-x-auto transition-colors duration-300">
         <Outlet />
       </div>
 
