@@ -4,7 +4,7 @@ import appleImg from "../../assets/apple_img.png";
 import metaImg from "../../assets/meta_img.png";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+function Register() {
   let [fname, setFname] = useState("");
   let [lname, setLname] = useState("");
   let [password, setPassword] = useState("");
@@ -41,16 +41,16 @@ function Login() {
         <form className="bg-white w-full max-w-md shadow-xl p-6 md:p-8 rounded-xl">
           
           <div className="mb-6 text-center space-y-2">
-            <p className="text-2xl md:text-3xl font-bold"> Log In</p>
+            <p className="text-2xl md:text-3xl font-bold">Sign Up</p>
             <p className="text-sm">
-              Don't have an account?
-              <span className="text-blue-500 cursor-pointer"> Sign Up</span>
+              Already have an account?
+              <span className="text-blue-500 cursor-pointer"> Log In</span>
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             
-            {/* <input
+            <input
               type="text"
               placeholder="First Name *"
               value={fname}
@@ -64,7 +64,7 @@ function Login() {
               value={lname}
               onChange={(e) => setLname(e.target.value)}
               className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
-            /> */}
+            />
 
             <input
               type="email"
@@ -89,9 +89,9 @@ function Login() {
             <button
               type="button"
               className="bg-[#0CC8A8] hover:bg-teal-600 transition text-white p-3 rounded-full font-semibold"
-              onClick={() => navigate("/dashboard")}
+              onClick={() => navigate("/login")}
             >
-              Login Account
+              Create Account
             </button>
 
             <div className="flex justify-center gap-4 pt-4">
@@ -112,4 +112,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

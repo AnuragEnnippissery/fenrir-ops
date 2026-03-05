@@ -8,6 +8,7 @@ import Login from './components/home/Login.jsx';
 import Dashboard from './components/dashboard/Dashboard';
 import Layout from './components/dashboard/Layout.jsx'
 import Scan from './components/dashboard/Scan.jsx'
+import Register from './components/home/Register.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -16,11 +17,15 @@ const appRouter = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Login />
+        element: <Register />
       },
       {
         path: "login",
         element: <Login />
+      },
+      {
+        path:"register",
+        element:<Register/>
       },
       {
         path: "dashboard",
