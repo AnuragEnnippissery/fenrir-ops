@@ -54,27 +54,27 @@ function Scan() {
           {/* Scan Details */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-5 border-t border-gray-600">
             <div>
-              <p className="text-gray-600">Scan Types</p>
+              <p className="text-gray-600 dark:text-gray-400">Scan Types</p>
               <p className="font-bold">Grey Box</p>
             </div>
             <div>
-              <p className="text-gray-600">Targets</p>
+              <p className="text-gray-600 dark:text-gray-400">Targets</p>
               <p className="font-bold break-words">google.com</p>
             </div>
             <div>
-              <p className="text-gray-600">Started At</p>
+              <p className="text-gray-600 dark:text-gray-400">Started At</p>
               <p className="font-bold">Nov 22 , 9.00</p>
             </div>
             <div>
-              <p className="text-gray-600">Credentials</p>
+              <p className="text-gray-600 dark:text-gray-400">Credentials</p>
               <p className="font-bold">2 Active</p>
             </div>
             <div>
-              <p className="text-gray-600">Files</p>
+              <p className="text-gray-600 dark:text-gray-400">Files</p>
               <p className="font-bold break-words">Control.pdf</p>
             </div>
             <div>
-              <p className="text-gray-600">Checklists</p>
+              <p className="text-gray-600 dark:text-gray-400">Checklists</p>
               <p className="text-teal-600">40/350</p>
             </div>
           </div>

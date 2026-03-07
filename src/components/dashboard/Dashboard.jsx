@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 
 function Dashboard() {
   let [scandata, setScandata] = useState([]);
+  let [searchText ,setSearchText]=useState();
+  let [filterdata,setFilterdata]=useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -11,7 +13,7 @@ function Dashboard() {
     }
     fetchData();
   }, []);
-
+  //console.log("search text",searchText);
   return (
     // <main className="px-4 md:px-6 py-6 space-y-10">
    <main className="px-4 md:px-6 py-6 space-y-10 bg-white dark:bg-black text-gray-900 dark:text-white">
@@ -36,44 +38,44 @@ function Dashboard() {
           </div>
 
           <div>
-            <span className="text-gray-600">Scheduled :</span>
+            <span className="text-gray-600 dark:text-gray-400">Scheduled :</span>
             <span className="font-bold"> 1000</span>
           </div>
 
           <div>
-            <span className="text-gray-600">Rescans :</span>
+            <span className="text-gray-600 dark:text-gray-400">Rescans :</span>
             <span className="font-bold"> 100</span>
           </div>
 
           <div>
-            <span className="text-gray-600">Failed Scans :</span>
+            <span className="text-gray-600 dark:text-gray-400">Failed Scans :</span>
             <span className="font-bold"> 100</span>
           </div>
 
           <div>
-            <span className="text-gray-600">10 min ago</span>
+            <span className="text-gray-600 dark:text-gray-400">10 min ago</span>
           </div>
         </div>
 
         {/* SEVERITY ROW */}
         <article className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div>
-            <p className="text-gray-600">Critical Severity</p>
+            <p className="text-gray-600 dark:text-gray-400">Critical Severity</p>
             <p className="font-bold">86</p>
           </div>
 
           <div>
-            <p className="text-gray-600">High Severity</p>
+            <p className="text-gray-600 dark:text-gray-400">High Severity</p>
             <p className="font-bold">16</p>
           </div>
 
           <div>
-            <p className="text-gray-600">Medium Severity</p>
+            <p className="text-gray-600 dark:text-gray-400">Medium Severity</p>
             <p className="font-bold">26</p>
           </div>
 
           <div>
-            <p className="text-gray-600">Low Severity</p>
+            <p className="text-gray-600 dark:text-gray-400">Low Severity</p>
             <p className="font-bold">16</p>
           </div>
         </article>
@@ -87,6 +89,8 @@ function Dashboard() {
           type="text"
           placeholder="Search Scans by name or type"
           className="w-full md:w-96 border p-2 rounded-md"
+          value={searchText}
+          onChange={(e)=>(setSearchText(e.target.value))} // to get immediate changes
         />
 
         <div className="flex flex-wrap gap-2">
